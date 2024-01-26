@@ -15,7 +15,7 @@ libs/Movie.h
 libs/MovieList.h
 libs/TextFileHandler.h
 
-libs/LisComplete.h
+libs/ListComplete.h
 
 
 output.txt
