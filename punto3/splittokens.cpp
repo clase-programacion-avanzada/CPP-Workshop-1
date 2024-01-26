@@ -7,7 +7,6 @@
 { if (!(cond)) { std::ostringstream str; str << msg; std::cerr << str.str(); } \
 } while(0)
 
-#include "../libs/TextFileHandler.h"
 #include "../libs/List.h"
 
 using namespace std;

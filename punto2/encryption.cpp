@@ -7,7 +7,6 @@
 { if (!(cond)) { std::ostringstream str; str << msg; std::cerr << str.str(); } \
 } while(0)
 
-#include "../libs/TextFileHandler.h"
 #include "../libs/List.h"
 
 using namespace std;
@@ -64,8 +63,21 @@ void decryptEntireMessage() {
     cout << "===Last check: Decrypt entire message===" << endl;
     cout << "If your code is correct, you should see a message in spanish" << endl;
 
-    TextFileHandler fileHandler("encryptedMessage.txt");
-    List<string> lines = fileHandler.readLines();
+    List<string> lines;
+
+    lines.add("Ol kvli jfv kfvwvh szxvi vh xvmgizigv vm oz mvtzgrerwzw.");
+    lines.add("Ml gv hzoeziá wv oz kirhróm jfv vh oz nfvigv, wvo wloli wv ozh vmuvinvwzwvh, wv oz xifvowzw wvo grvnkl, wvo uiíl xzkzizaóm wv oz mzgfizovaz sfnzmz l wv oz kéiwrwz wv glwl ol jfv fmz eva gferhgv, jfvirwl.");
+    lines.add("Sztzh ol jfv sztzh, ¡ml gv xvmgivh vm vhl!");
+    lines.add("Xzhr hrvnkiv, vo kilyovnz ml vh jfv olh kilyovnzh z olh jfv mlh vmuivmgznlh ml gvmtzm hlofxróm");
+    lines.add("Vo kilyovnz vh jfv gvmvnlh gzmgl nrvwl z uzoozi jfv mlh mvtznlh z evi mfvhgilh kilyovnzh wvhwv lgiz kvihkvxgrez.");
+    lines.add("B vmglmxvh szxvnlh ol nrhnl fmz b lgiz, b lgiz eva.");
+    lines.add("B xozil vhgá jfv, kli vhl, vmxlmgiznlh vo uzool jfv vhgáyznlh yfhxzmwl.");
+    lines.add("Gf erwz hrvnkiv hviá fmz ofxsz b hrvnkiv gvmwiáh kilyovnzh.");
+    lines.add("Kvil slb, szh gvmrwl oz lkligfmrwzw wv evi ozh xlhzh wv fm nlwl wrhgrmgl.");
+    lines.add("Rmxofhl hr vhl hrtmrurxz vmuivmgzigv z lyhgáxfolh jfv zo kirmxrkrl kzivxízm rnklhryovh; kvmhzhgv wvhwv lgiz kvihkvxgrez b olh hfkvizhgv.");
+    lines.add("Klijfv erhgv ozh xlhzh wvhwv fm ámtfol wruvivmgv, ozh vmgvmwrhgv kli ol jfv ivzonvmgv vizm.");
+    lines.add("Klijfv hvtfrhgv nlerémwlgv szxrz zwvozmgv, hrm rnkligzi xfámgl gv zovqzizh wvo xznrml jfv hv gv liwvmó hvtfri l xfám rnkiverhryov hv eloerviz...");
+    lines.add("Vmxlmgizhgv gf xznrml.");
 
     for (int i = 0; i < lines.size; i++) {
         string line = lines.get(i);

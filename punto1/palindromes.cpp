@@ -7,7 +7,6 @@
 { if (!(cond)) { std::ostringstream str; str << msg; std::cerr << str.str(); } \
 } while(0)
 
-#include "../libs/TextFileHandler.h"
 #include "../libs/List.h"
 
 using namespace std;
@@ -170,8 +169,17 @@ void testCountPalindromes() {
 
     cout << "---Case 2: Validating count of palindromes in list with palindrome elements" << endl;
 
-    TextFileHandler fileHandler("palindromes.txt");
-    List<string> linesCase2Test1 = fileHandler.readLines();
+    
+    List<string> linesCase2Test1;
+
+    linesCase2Test1.add("a");
+    linesCase2Test1.add("");
+    linesCase2Test1.add("aa");
+    linesCase2Test1.add("Anita lava la tina");
+    linesCase2Test1.add("reconocer");
+    linesCase2Test1.add("No soy palindromo");
+    linesCase2Test1.add("Yo tampoco soy palindromo");
+
 
     int expectedCase2Test1 = 5;
     int resultCase2Test1 = countPalindromes(linesCase2Test1);

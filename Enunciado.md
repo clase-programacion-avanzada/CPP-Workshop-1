@@ -15,7 +15,7 @@ La primera tarea, antes de iniciar con el taller va a ser modificar la estructua
 
 Existen frases que se leen de izquierda a derecha de la misma forma que de derecha a izquierda; se conoce como palíndromas. Por ejemplo, la palabra `reconocer` es palíndroma. Así mismo, la frase `anita lava la tina` también lo es. Sin embargo, para que esto funcione, hay que eliminar los espacios que se encuentran dentro de la frase.
 
-1. Desarrolle una función que reciba una cadena de caracteres (es decir un String), que (elimine los espacios)[https://blog.devgenius.io/regex-replace-in-c-replace-the-match-of-a-string-using-regex-replace-c204c6b6f256] que contiene la cadena y que retorne la cadena sin ningún espacio.
+1. Desarrolle una función que reciba una cadena de caracteres (es decir un String), que [elimine los espacios](https://blog.devgenius.io/regex-replace-in-c-replace-the-match-of-a-string-using-regex-replace-c204c6b6f256) que contiene la cadena y que retorne la cadena sin ningún espacio.
 
 2. Desarrolle una función que reciba una frase cualquiera (que puede o no contener espacios) y que retorne verdadero si la frase es palíndroma o falso si no lo es.
    
