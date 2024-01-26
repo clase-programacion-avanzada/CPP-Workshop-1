@@ -10,6 +10,7 @@
 *.lo
 *.o
 *.obj
+*.pdf
 
 libs/Movie.h
 libs/MovieList.h
