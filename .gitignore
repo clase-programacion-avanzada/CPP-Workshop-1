@@ -18,11 +18,9 @@ libs/TextFileHandler.h
 
 libs/ListComplete.h
 
-
-output.txt
-example_writing.txt
-example_writing_append_1.txt
-example_writing_append_2.txt
+punto1/palindromes
+punto2/encryption
+punto3/splittokens
 # Precompiled Headers
 *.gch
 *.pch

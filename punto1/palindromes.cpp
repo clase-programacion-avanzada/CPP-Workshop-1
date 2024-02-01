@@ -2,9 +2,11 @@
 #include <cassert>
 #include <string>
 #include <sstream>
+#include <regex>
 
 #define ASSERT_WITH_MSG(cond, msg) do \
 { if (!(cond)) { std::ostringstream str; str << msg; std::cerr << str.str(); } \
+ else { std::ostringstream str; str << "Test passed "; std::cout << str.str(); } \
 } while(0)
 
 #include "../libs/List.h"
@@ -31,8 +33,10 @@ int main() {
 
 string removeBlankSpacesFromString(string line) {
     
-    //TODO: Implement this function to remove blank spaces from string
+    //TODO: Implement this function to remove blank spaces from a string
+    //See how regex_replace works in https://en.cppreference.com/w/cpp/regex/regex_replace
     return "";
+
 }
 
 bool isPalindrome(string line) {
@@ -64,7 +68,7 @@ void testRemoveBlankSpacesFromString() {
 
     string lineCase2Test1 = "pig:oink";
     string expectedCase2Test1 = "pig:oink";
-    string resultCase2Test1 = removeBlankSpacesFromString(lineCase1Test1);
+    string resultCase2Test1 = removeBlankSpacesFromString(lineCase2Test1);
     string errorMsgCase2Test1 = "Case 2 failed \n Expected: " + expectedCase2Test1 + " but got: " + resultCase2Test1 + "\n";
 
     ASSERT_WITH_MSG(resultCase2Test1 == expectedCase2Test1, errorMsgCase2Test1);

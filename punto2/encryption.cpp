@@ -5,6 +5,7 @@
 
 #define ASSERT_WITH_MSG(cond, msg) do \
 { if (!(cond)) { std::ostringstream str; str << msg; std::cerr << str.str(); } \
+ else { std::ostringstream str; str << "Test passed "; std::cout << str.str(); } \
 } while(0)
 
 #include "../libs/List.h"
