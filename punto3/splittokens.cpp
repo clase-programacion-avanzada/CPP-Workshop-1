@@ -66,7 +66,7 @@ void testSplit() {
     string errorMsgCase1Test1 = "Case 1 failed \n Expected: " + expectedCase1Test1.toString() + " but got: " + resultCase1Test1.toString() + "\n";
 
     ASSERT_WITH_MSG(resultCase1Test1 == expectedCase1Test1, errorMsgCase1Test1);
-    
+    cout << endl;
     cout << "--Case 1.2: splitting letters of csv file" << endl;
 
     string lineCase1Test2 = "1,2,3,4,5,6,7,8,9,0";
