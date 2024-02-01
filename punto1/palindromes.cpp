@@ -41,6 +41,11 @@ string removeBlankSpacesFromString(string line) {
 
 bool isPalindrome(string line) {
     //TODO: Implement this function to check if a string is palindrome
+    //It could be useful to use the function removeBlankSpacesFromString
+    //Also, you can use the tolower function to convert a character to lowercase
+    //https://www.geeksforgeeks.org/tolower-function-in-cpp/
+
+
     return false;
 }
 
@@ -53,7 +58,7 @@ void testRemoveBlankSpacesFromString() {
     
     cout << "===Checking first function: Remove blank spaces from string===" << endl;
 
-    cout << "---Case 1: removing blank spaces of string with spaces" << endl;
+    cout << "-Case 1: removing blank spaces of string with spaces" << endl;
     
     string lineCase1Test1 = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
     string expectedCase1Test1 = "abcdefghijklmnopqrstuvwxyz";
@@ -62,9 +67,9 @@ void testRemoveBlankSpacesFromString() {
 
     ASSERT_WITH_MSG(resultCase1Test1 == expectedCase1Test1, errorMsgCase1Test1);
     
-    cout<<endl;
+    cout<<endl<<endl;
 
-    cout << "---Case 2: removing blank spaces of string without spaces" << endl;
+    cout << "-Case 2: removing blank spaces of string without spaces" << endl;
 
     string lineCase2Test1 = "pig:oink";
     string expectedCase2Test1 = "pig:oink";
@@ -73,14 +78,14 @@ void testRemoveBlankSpacesFromString() {
 
     ASSERT_WITH_MSG(resultCase2Test1 == expectedCase2Test1, errorMsgCase2Test1);
     
-    cout<<endl;
+    cout<<endl<<endl;
 }
 
 void testIsPalindrome() {
 
     cout << "===Checking second function: Is palindrome===" << endl;
 
-    cout << "---Case 1: Validating string of size 1 is palindrome" << endl;
+    cout << "-Case 1: Validating string of size 1 is palindrome" << endl;
 
     string lineCase1Test1 = "a";
     bool expectedCase1Test1 = true;
@@ -90,10 +95,10 @@ void testIsPalindrome() {
 
     ASSERT_WITH_MSG(resultCase1Test1 == expectedCase1Test1, errorMsgCase1Test1);
 
-    cout<<endl;
+    cout<<endl<<endl;
 
-    cout << "---Case 2: Validating string of size 2 is palindrome" << endl;
-    cout << "---Case 2.1: Validating string of size 2 is palindrome when both letters are equal" << endl;
+    cout << "-Case 2: Validating string of size 2 is palindrome" << endl;
+    cout << "--Case 2.1: Validating string of size 2 is palindrome when both letters are equal" << endl;
 
     string lineCase2Test1 = "aa";
     bool expectedCase2Test1 = true;
@@ -105,7 +110,7 @@ void testIsPalindrome() {
 
     cout<<endl;
 
-    cout << "---Case 2.2: Validating string of size 2 is palindrome when both letters are different" << endl;
+    cout << "--Case 2.2: Validating string of size 2 is palindrome when both letters are different" << endl;
 
     string lineCase2Test2 = "ab";
     bool expectedCase2Test2 = false;
@@ -115,10 +120,10 @@ void testIsPalindrome() {
 
     ASSERT_WITH_MSG(resultCase2Test2 == expectedCase2Test2, errorMsgCase2Test2);
 
-    cout<<endl;
+    cout<<endl<<endl;
 
-    cout << "---Case 3: Validating string of size n without spaces is palindrome" << endl;
-    cout << "---Case 3.1: Validating string of size n without spaces is palindrome when a palindrome word is sent to function" << endl;
+    cout << "-Case 3: Validating string of size n without spaces is palindrome" << endl;
+    cout << "--Case 3.1: Validating string of size n without spaces is palindrome when a palindrome word is sent to function" << endl;
 
     string lineCase3Test1 = "anitalavalatina";
     bool expectedCase3Test1 = true;
@@ -130,7 +135,7 @@ void testIsPalindrome() {
 
     cout<<endl;
 
-    cout << "---Case 3.2: Validating string of size n without spaces is palindrome when a non palindrome word is sent to function" << endl;
+    cout << "--Case 3.2: Validating string of size n without spaces is palindrome when a non palindrome word is sent to function" << endl;
 
     string lineCase3Test2 = "anitalavalatino";
 
@@ -141,9 +146,9 @@ void testIsPalindrome() {
 
     ASSERT_WITH_MSG(resultCase3Test2 == expectedCase3Test2, errorMsgCase3Test2);
 
-    cout<<endl;
+    cout<<endl<<endl;
 
-    cout << "---Case 4: Validating string blank is palindrome" << endl;
+    cout << "-Case 4: Validating string blank is palindrome" << endl;
 
     string lineCase4Test1 = "";
     bool expectedCase4Test1 = true;
@@ -152,13 +157,15 @@ void testIsPalindrome() {
     string errorMsgCase4Test1 = "Case 4 failed \n Expected: " + to_string(expectedCase4Test1) + " but got: " + to_string(resultCase4Test1) + "\n";
 
     ASSERT_WITH_MSG(resultCase4Test1 == expectedCase4Test1, errorMsgCase4Test1);
+    
+    cout<<endl<<endl;
 }
 
 void testCountPalindromes() {
 
     cout << "===Checking third function: Count palindromes===" << endl;
 
-    cout << "---Case 1: Validating count of palindromes in empty list" << endl;
+    cout << "-Case 1: Validating count of palindromes in empty list" << endl;
 
     List<string> linesCase1Test1;
 
@@ -169,9 +176,9 @@ void testCountPalindromes() {
 
     ASSERT_WITH_MSG(resultCase1Test1 == expectedCase1Test1, errorMsgCase1Test1);
 
-    cout<<endl;
+    cout<<endl<<endl;
 
-    cout << "---Case 2: Validating count of palindromes in list with palindrome elements" << endl;
+    cout << "-Case 2: Validating count of palindromes in list with palindrome elements" << endl;
 
     
     List<string> linesCase2Test1;
