@@ -7,7 +7,7 @@ A continuación se va a encontrar una serie de problemas, cada uno de estos prob
 
 ## 0. Templates (1.0)
 
-Dentro de los archivos para hacer el taller, va a encontrar un archivo llamado [List.h, dentro de la carpeta libs](/libs/List.h). 
+Dentro de los archivos para hacer el taller, va a encontrar un archivo llamado [List.h, dentro de la carpeta libs](https://github.com/clase-programacion-avanzada/CPP-Workshop-1/blob/main/libs/List.h). 
 
 La primera tarea, antes de iniciar con el taller va a ser modificar la estructua, agregando un template que permita tener listas de cualquier tipo. En este caso, la función `operator=` y la función `toString()` no deben ser modificadas. Sin esta modificación el código no funcionará.
   
