@@ -39,18 +39,56 @@ string removeBlankSpacesFromString(string line) {
 
 }
 
+//Anita lava la tina => true
+//anitalavalatina => true
+//AnitA lava la tina => true
+// the function isPalindrome is not case sensitive
+
+string toLowercase(string word) {
+
+    string wordLowercase = "";
+    //if word is "Anita" then wordLowercase is "anita"
+    for (int i = 0; i < word.size(); i++) {
+        //tolower is a function that converts a character to lowercase
+        //when i is 0, word[i] is 'A' and tolower(word[i]) is 'a'
+        //when i is 1, word[i] is 'n' and tolower(word[i]) is 'n'
+        //when i is 2, word[i] is 'i' and tolower(word[i]) is 'i'
+        //when i is 3, word[i] is 't' and tolower(word[i]) is 't'
+        //when i is 4, word[i] is 'a' and tolower(word[i]) is 'a'
+        wordLowercase += tolower(word[i]);
+    }
+
+    return wordLowercase;
+    
+
+}
+
 bool isPalindrome(string line) {
     //TODO: Implement this function to check if a string is palindrome
     //It could be useful to use the function removeBlankSpacesFromString
     //Also, you can use the tolower function to convert a character to lowercase
     //https://www.geeksforgeeks.org/tolower-function-in-cpp/
 
+    //1. Remove blank spaces from line
+    //Optional: Convert line to lowercase
+    string lineWithoutSpaces = removeBlankSpacesFromString(line);
+    
+    //2. Check if lineWithoutSpaces is palindrome
 
-    return false;
+
+    return true;
 }
 
 int countPalindromes(List<string> lines) {
     //TODO: Implement this function to count palindromes in a list of strings
+    //example lines = 
+    // ["Anita lava la tina", 
+    // "reconocer", 
+    // "No soy palindromo", 
+    // "Yo tampoco soy palindromo"]
+
+
+    // return should be 2
     return 0;
 }
 

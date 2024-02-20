@@ -24,6 +24,7 @@ int main() {
 
 string encryptOrDecrypt(string line) {
     //TODO: Implement this function to encrypt or decrypt a string
+
     return "";
 }
 
@@ -43,7 +44,7 @@ void testEncryptOrDecrypt() {
     bool resultIsCorrect = resultCase1Test1 == expectedCase1Test1;
 
     ASSERT_WITH_MSG(lineWasNotModified, "The original line was modified\n");
-    ASSERT_WITH_MSG(resultIsCorrect);
+    ASSERT_WITH_MSG(resultIsCorrect, errorMsgCase1Test1);
 
     cout << "--Case 1.2: encrypting letters of uppercase alphabet" << endl;
 

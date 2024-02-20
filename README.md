@@ -15,11 +15,11 @@ La primera tarea, antes de iniciar con el taller va a ser modificar la estructua
 
 Existen frases que se leen de izquierda a derecha de la misma forma que de derecha a izquierda; se conoce como palíndromas. Por ejemplo, la palabra `reconocer` es palíndroma. Así mismo, la frase `anita lava la tina` también lo es. Sin embargo, para que esto funcione, hay que eliminar los espacios que se encuentran dentro de la frase.
 
-1. Desarrolle una función que reciba una cadena de caracteres (es decir un String), que [elimine los espacios](https://blog.devgenius.io/regex-replace-in-c-replace-the-match-of-a-string-using-regex-replace-c204c6b6f256) que contiene la cadena y que retorne la cadena sin ningún espacio.
+1. Desarrolle una [función](https://github.com/clase-programacion-avanzada/CPP-Workshop-1/blob/main/punto1/palindromes.cpp#L34) que reciba una cadena de caracteres (es decir un String), que [elimine los espacios](https://blog.devgenius.io/regex-replace-in-c-replace-the-match-of-a-string-using-regex-replace-c204c6b6f256) que contiene la cadena y que retorne la cadena sin ningún espacio. 
 
-2. Desarrolle una función que reciba una frase cualquiera (que puede o no contener espacios) y que retorne verdadero si la frase es palíndroma o falso si no lo es.
+2. Desarrolle una [función](https://github.com/clase-programacion-avanzada/CPP-Workshop-1/blob/main/punto1/palindromes.cpp#L42) que reciba una frase cualquiera (que puede o no contener espacios) y que retorne verdadero si la frase es palíndroma o falso si no lo es.
    
-3. Desarrolle una función que reciba una lista con strings. Debe retornar la cantidad de strings de esa lista que son palíndromos. 
+3. Desarrolle una [función](https://github.com/clase-programacion-avanzada/CPP-Workshop-1/blob/main/punto1/palindromes.cpp#L52) que reciba una lista con strings. Debe retornar la cantidad de strings de esa lista que son palíndromos. 
 
 **Todas estas funciones se deben desarrollar en el archivo palindromos.cpp El programa le indicará si su respuesta es válida o no. No cambie los nombres de las funciones, esto puede ocasionar que no se haga la verificación correctamente.**
 
@@ -49,7 +49,7 @@ Si se fija, al hacer el mismo proceso con la traducción obtenemos el mensaje or
 |------------|---|---|---|---|---|---|---|---|---|---|---|
 | Traducción | H | o | l | a |   | M | u | n | d | o | ! |
 
-Esta función debe desarrollarse en el archivo encriptacion.cpp
+**Esta función se deben desarrollar en el archivo [encryption.cpp](https://github.com/clase-programacion-avanzada/CPP-Workshop-1/blob/main/punto2/encryption.cpp#L25) El programa le indicará si su respuesta es válida o no. No cambie los nombres de las funciones, esto puede ocasionar que no se haga la verificación correctamente.**
 
 ## 3. Separación por tokens (2.0):
 
@@ -75,3 +75,5 @@ List: ["Carlos", "18", "2.5"]
 Fíjese que los números `18` y `2.5` en realidad son strings.
 
 La función debe permitir separar strings sin importar cuántos tokens tenga (puede que le sirva leer sobre [stringstream](https://akh1l.hashnode.dev/stringstream-and-getline-in-cpp) y [getline](https://akh1l.hashnode.dev/stringstream-and-getline-in-cpp)).
+
+**Esta función se deben desarrollar en el archivo [splittokens.cpp](https://github.com/clase-programacion-avanzada/CPP-Workshop-1/blob/main/punto3/splittokens.cpp#L23) El programa le indicará si su respuesta es válida o no. No cambie los nombres de las funciones, esto puede ocasionar que no se haga la verificación correctamente.**
