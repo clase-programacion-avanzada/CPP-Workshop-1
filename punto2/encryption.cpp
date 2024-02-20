@@ -43,7 +43,7 @@ void testEncryptOrDecrypt() {
     bool resultIsCorrect = resultCase1Test1 == expectedCase1Test1;
 
     ASSERT_WITH_MSG(lineWasNotModified, "The original line was modified\n");
-    ASSERT_WITH_MSG(resultCase1Test1 == expectedCase1Test1, errorMsgCase1Test1);
+    ASSERT_WITH_MSG(resultIsCorrect);
 
     cout << "--Case 1.2: encrypting letters of uppercase alphabet" << endl;
 

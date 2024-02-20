@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 struct List {
     string elements[100];
     int size;
